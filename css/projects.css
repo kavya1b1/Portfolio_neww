@@ -48,3 +48,39 @@
   .project-card.featured{grid-template-columns:1fr}
   .project-card.featured .project-img{min-height:200px}
 }
+
+.project-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:20px;
+    display:block;
+}
+
+.certificate-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:40px;
+}
+
+.certificate-card{
+    background:#111;
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:20px;
+    padding:25px;
+    transition:.3s;
+}
+
+.certificate-card:hover{
+    transform:translateY(-8px);
+}
+
+.certificate-card h3{
+    margin-bottom:10px;
+}
+
+.certificate-card a{
+    color:#7c5cff;
+    text-decoration:none;
+}
